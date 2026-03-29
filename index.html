@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River View Restaurant | Premium Dining Experience</title>
+    <meta name="description"
+        content="A luxury dining experience by the river. Explore our menu featuring Biriyani, Noodles, Pasta, and Kabab.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Overlay for initial page load transition -->
+    <div class="page-transition-overlay"></div>
+
+    <nav class="navbar glass">
+        <a href="#" class="logo">
+            <img src="https://i.ibb.co.com/gZJCjQR1/image.png" alt="River View Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about" class="magnetic-text">About</a></li>
+            <li><a href="#popular" class="magnetic-text">Popular</a></li>
+            <li><a href="#menu" class="magnetic-text">Menu</a></li>
+            <li><a href="#gallery" class="magnetic-text">Gallery</a></li>
+            <li><a href="#timing" class="magnetic-text">Timing</a></li>
+            <li><a href="#location" class="magnetic-text">Location</a></li>
+        </ul>
+        <!-- Hamburger injected by JS -->
+    </nav>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/8801833995111" class="floating-wa magnetic-btn" target="_blank" rel="noopener noreferrer">
+        <div class="pulse-ring"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
+        </svg>
+    </a>
+
+    <!-- ================================
+         1. HERO SECTION
+    ================================= -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg parallax" data-speed="0.5"></div>
+        <div class="hero-content">
+            <h1 class="stagger-reveal">
+                <span>River View</span><br>
+                <span>Restaurant</span>
+            </h1>
+            <p class="tagline stagger-reveal-delay">A Culinary Journey by the River's Edge</p>
+
+            <a href="https://www.foodpanda.com" target="_blank" rel="noopener noreferrer"
+                class="magnetic-btn order-now-btn stagger-reveal-delay-2">
+                <span class="btn-text">Order Now</span>
+                <span class="btn-glow"></span>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to Explore</p>
+        </div>
+    </section>
+
+    <!-- ================================
+         2. ABOUT / EXPERIENCE SECTION
+         Image is AFTER the text panel so
+         on mobile it stacks below naturally.
+    ================================= -->
+    <section id="about" class="about-section scroll-trigger">
+        <div class="about-container">
+            <!-- Text panel — comes first in DOM → top on mobile, left on desktop -->
+            <div class="glass-panel text-reveal">
+                <h2 class="section-title">The Experience</h2>
+                <div class="title-underline"></div>
+                <p>Welcome to a realm of exquisite flavors and mesmerizing views. At River View Restaurant, we blend
+                    culinary mastery with an atmosphere of dark luxury. Let the gentle river breeze accompany your
+                    dining journey as we serve you the finest dishes crafted with passion.</p>
+            </div>
+
+            <!-- Image — comes second in DOM → below text on mobile, right on desktop -->
+            <div class="about-image parallax" data-speed="0.2">
+                <div class="image-wrapper glass-panel">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1974&auto=format&fit=crop"
+                        alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         2.5 POPULAR DISHES SECTION
+    ================================= -->
+    <section id="popular" class="popular-section scroll-trigger">
+        <h2 class="section-title">Popular Dishes</h2>
+        <div class="title-underline"></div>
+
+        <div class="popular-grid">
+            <div class="menu-card glass-panel popular-card">
+                <div class="card-badge">Most Ordered</div>
+                <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?q=80&w=800&auto=format&fit=crop"
+                    alt="Royal Mutton Biriyani">
+                <div class="menu-info">
+                    <h3>Royal Mutton Biriyani</h3>
+                    <span class="menu-price">Tk 450</span>
+                </div>
+                <p class="menu-desc">Slow-cooked basmati rice with tender mutton chops.</p>
+                <a href="https://www.foodpanda.com.bd" target="_blank" rel="noopener noreferrer" class="card-order-btn">
+                    Order on Foodpanda
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="menu-card glass-panel popular-card">
+                <div class="card-badge">Chef's Choice</div>
+                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=800&auto=format&fit=crop"
+                    alt="Seekh Kabab">
+                <div class="menu-info">
+                    <h3>Seekh Kabab</h3>
+                    <span class="menu-price">Tk 320</span>
+                </div>
+                <p class="menu-desc">Minced beef skewers perfectly charred.</p>
+                <a href="https://www.foodpanda.com.bd" target="_blank" rel="noopener noreferrer" class="card-order-btn">
+                    Order on Foodpanda
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="menu-card glass-panel popular-card">
+                <div class="card-badge">Customer Favorite</div>
+                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop"
+                    alt="Spicy Schezwan Noodles">
+                <div class="menu-info">
+                    <h3>Spicy Schezwan Noodles</h3>
+                    <span class="menu-price">Tk 250</span>
+                </div>
+                <p class="menu-desc">Wok-tossed noodles with fiery schezwan sauce.</p>
+                <a href="https://www.foodpanda.com.bd" target="_blank" rel="noopener noreferrer" class="card-order-btn">
+                    Order on Foodpanda
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         3. MENU SECTION
+    ================================= -->
+    <section id="menu" class="menu-section scroll-trigger">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="title-underline"></div>
+
+        <div class="menu-categories">
+            <button class="menu-tab active" data-target="all">All</button>
+            <button class="menu-tab" data-target="biriyani">Biriyani</button>
+            <button class="menu-tab" data-target="noodles">Noodles</button>
+            <button class="menu-tab" data-target="pasta">Pasta</button>
+            <button class="menu-tab" data-target="kabab">Kabab</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+            <!-- Populated via JavaScript -->
+        </div>
+    </section>
+
+    <!-- ================================
+         4. GALLERY SECTION
+    ================================= -->
+    <section id="gallery" class="gallery-section scroll-trigger">
+        <h2 class="section-title">Gallery</h2>
+        <div class="title-underline"></div>
+
+        <div class="gallery-track">
+            <div class="gallery-item glass-panel">
+                <img src="https://i.ibb.co.com/1JtnXXpj/image.png" alt="River View Restaurant Gallery 1">
+            </div>
+            <div class="gallery-item glass-panel">
+                <img src="https://i.ibb.co.com/sdKhggZN/image.png" alt="River View Restaurant Gallery 2">
+            </div>
+            <div class="gallery-item glass-panel">
+                <img src="https://i.ibb.co.com/Xf2NygDV/image.png" alt="River View Restaurant Gallery 3">
+            </div>
+            <div class="gallery-item glass-panel">
+                <img src="https://i.ibb.co.com/0HYdKsp/image.png" alt="River View Restaurant Gallery 4">
+            </div>
+            <div class="gallery-item glass-panel">
+                <img src="https://i.ibb.co.com/LDmS8ghH/image.png" alt="River View Restaurant Gallery 5">
+            </div>
+        </div>
+
+        <p class="gallery-hint" id="galleryHint">&larr; Drag to explore &rarr;</p>
+    </section>
+
+    <!-- ================================
+         5. OPENING HOURS SECTION
+         data-day matches JS getDay() value:
+         0=Sun 1=Mon 2=Tue 3=Wed 4=Thu 5=Fri 6=Sat
+    ================================= -->
+    <section id="timing" class="timing-section scroll-trigger">
+        <div class="timing-container glass-panel">
+            <h2 class="section-title">Operating Hours</h2>
+            <div class="title-underline"></div>
+            <ul class="time-list">
+                <li data-day="5">
+                    <span class="day">Friday</span>
+                    <span class="dots"></span>
+                    <span class="time">9:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="6">
+                    <span class="day">Saturday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="0">
+                    <span class="day">Sunday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="1">
+                    <span class="day">Monday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="2">
+                    <span class="day">Tuesday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="3">
+                    <span class="day">Wednesday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+                <li data-day="4">
+                    <span class="day">Thursday</span>
+                    <span class="dots"></span>
+                    <span class="time">10:00 AM – 10:00 PM</span>
+                </li>
+            </ul>
+            <div class="live-status-badge" id="liveStatus">
+                <span class="live-dot" id="liveDot"></span>
+                <span id="liveStatusText">Checking...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         6. LOCATION / MAP SECTION
+    ================================= -->
+    <section id="location" class="location-section scroll-trigger">
+        <div class="location-info glass-panel">
+            <h2 class="section-title">Location</h2>
+            <div class="title-underline"></div>
+            <p class="address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Ghat, 11 Potenga Rd, Chattogram
+            </p>
+        </div>
+        <div class="map-container glass-panel">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24654.183934395605!2d91.7946767!3d22.2644141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf87cbaf5523%3A0xf5356256eecd18f1!2sRiver%20View%20Restaurant!5e1!3m2!1sen!2sbd!4v1774634428257!5m2!1sen!2sbd"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                title="River View Restaurant Location"></iframe>
+        </div>
+    </section>
+
+    <!-- ================================
+         7. FOOTER
+    ================================= -->
+    <footer id="footer" class="footer scroll-trigger">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>River View</h3>
+                <p>Est. Chattogram</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/rvrctg/" target="_blank" rel="noopener noreferrer"
+                    class="social-icon magnetic-btn" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://in.trip.com/restaurant/bangladesh/chittagong/detail/river-view-restaurant-19680694/"
+                    target="_blank" rel="noopener noreferrer" class="social-icon magnetic-btn" title="Trip.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19c-1.5 0-2.5-1-2.5-2.5C1.5 15 3 14 3 14s1.5-1 1.5 2.5C4.5 18 3.5 19 4 19z" />
+                        <path d="M21 19c1.5 0 2.5-1 2.5-2.5C23.5 15 22 14 22 14s-1.5-1-1.5 2.5c0 1.5 1 2.5 2.5 2.5z" />
+                        <path d="M12.5 6.5C14 6.5 15 5.5 15 4c0-1.5-1.5-2.5-1.5-2.5S12 2.5 12 4c0 1.5 1 2.5 2.5 2.5z" />
+                        <path d="M11.5 12.5a3 3 0 1 0-3-3 3 3 0 0 0 3 3z" />
+                        <path d="M6 10l-2-2" />
+                        <path d="M19 10l2-2" />
+                        <path d="M12 4v3" />
+                        <path d="M8 15l-3 3" />
+                        <path d="M16 15l3 3" />
+                    </svg>
+                </a>
+                <a href="https://river-view-restaurant-3.wheree.com/" target="_blank" rel="noopener noreferrer"
+                    class="social-icon magnetic-btn" title="Wheree">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 River View Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Full Screen Gallery Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
